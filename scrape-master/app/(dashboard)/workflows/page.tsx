@@ -13,6 +13,7 @@ function page() {
           <h1 className="text-3xl font-bold">WorkFlows.</h1>
           <p className="text-muted-foreground">Manage your workflows</p>
         </div>
+        <CreateWorkflowDialog triggerText="Create WorkFlow" />
       </div>
 
       <div className="h-full py-6">
@@ -50,7 +51,7 @@ async function UserWorkflows() {
   }
   if (workflows.length === 0) {
     return (
-      <div className="flex flex-col gap-24 h-full items-center justify-center">
+      <div className="flex flex-col gap-2 h-full items-center justify-center">
         <div className="rounded-full bg-accent w-20 h-20 flex items-center justify-center">
           <InboxIcon size={40} className="stroke-primary" />
         </div>
