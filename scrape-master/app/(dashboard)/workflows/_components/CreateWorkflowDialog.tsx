@@ -47,7 +47,7 @@ function CreateWorkflowDialog({triggerText}:{triggerText?:string}) {
     const onSubmit = useCallback((values: createWorkflowSchemaType)=>{
       toast.loading("Creating workflow...",{id:"create-workflow"});
       mutate(values);
-    },[mutate])
+    },[mutate]);
 
   return (
     <Dialog open={open} onOpenChange={(open)=>{

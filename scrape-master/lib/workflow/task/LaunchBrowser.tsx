@@ -16,6 +16,13 @@ export const LaunchBrowserTask={
         helperText:"eg: http://www.google.com",
         required:true,
         hideHandle: true,
-    }]
+    }],
+
+    outputs:[
+        {
+            name:"Web Page",
+            type:TaskParamType.BROWSER_INSTANCE,
+        }
+    ]
 
 }
