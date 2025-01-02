@@ -7,7 +7,6 @@ import { TaskRegistry } from "@/lib/workflow/task/registry";
 import { AppNode } from "@/type/appNode";
 import { TaskType } from "@/type/task";
 import { useReactFlow } from "@xyflow/react";
-import { add } from "date-fns";
 import { CoinsIcon, Copy, CopyIcon, GripVerticalIcon, TrashIcon } from "lucide-react";
 import React from "react";
 
@@ -25,7 +24,7 @@ function NodeHeader({ taskType, nodeId }: { taskType: TaskType, nodeId: string})
           {task.isEntryPoint && <Badge>Entry point</Badge>}
           <Badge className="gap-2 flex items-center text-xs">
             <CoinsIcon size={16} />
-            TODO
+            {task.credits}
           </Badge>
           {!task.isEntryPoint && (
             <>

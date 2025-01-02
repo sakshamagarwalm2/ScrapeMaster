@@ -8,6 +8,8 @@ import { NodeInput, NodeInputs } from "./NodeInputs";
 import { NodeOutput } from "./NodeOutputs";
 import { NodeOutputs } from "./NodeOutputs";
 
+const DEV_MODE =process.env.NEXT_PUBLIC_DEV_MODE === "true";
+
 const NodeComponent = memo((props: NodeProps)=>{
     const nodeData = props.data as AppNodeData;
     const task = TaskRegistry[nodeData.type];
