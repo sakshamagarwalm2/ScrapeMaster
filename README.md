@@ -209,10 +209,5 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with ❤️ by [Your Name]
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/scrape-master)](https://github.com/yourusername/scrape-master/stargazers)
-[![GitHub issues](https://img.shields.io/github/issues/yourusername/scrape-master)](https://github.com/yourusername/scrape-master/issues)
-[![GitHub license](https://img.shields.io/github/license/yourusername/scrape-master)](https://github.com/yourusername/scrape-master/blob/main/LICENSE)
-
+Built with ❤️ by Sak_HKRM
 
