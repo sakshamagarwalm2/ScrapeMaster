@@ -2,9 +2,11 @@
 
 A powerful, modern web scraping workflow automation platform built with Next.js 14 and TypeScript. Design, execute, and monitor complex web scraping workflows through an intuitive visual interface.
 
-<video width="320" height="240" controls>
-  <source src="https://github.com/sakshamagarwalm2/ScrapeMaster/blob/main/public/Recording%202025-01-03%20194726.mp4" type="video/mp4">
-</video>
+
+
+
+https://github.com/user-attachments/assets/675c77f0-64a9-4398-b0fc-3934aa19ef54
+
 
 ## 📚 Table of Contents
 - [Overview](#overview)
