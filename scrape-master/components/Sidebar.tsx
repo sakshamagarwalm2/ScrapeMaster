@@ -7,6 +7,7 @@ import Link from 'next/link';
 import { Button, buttonVariants } from './ui/button';
 import { usePathname } from 'next/navigation';
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import UserAvailableCredits from './UserAvailableCredits';
 
 const routes = [
     {
@@ -41,7 +42,9 @@ function DesktopSidebar() {
         <div className="flex items-center justify-center gap-2 border-b-[1px] border-separate p-4">
             <Logo/>
         </div>
-        <div className="">TODO Credits</div>
+        <div className="">
+            <UserAvailableCredits/>
+        </div>
         <div className="flex flex-col p-2">
             {routes.map((routes) => (
                 <Link
@@ -75,6 +78,7 @@ export function MobileSidebar() {
             <SheetContent className='w-[400px] sm:w-[540px] space-y-4'
             side={"left"}>
                 <Logo/>
+                <UserAvailableCredits/>
                 <div className="flex flex-col gap-1">{routes.map((routes) => (
                 <Link
                 key={routes.href}

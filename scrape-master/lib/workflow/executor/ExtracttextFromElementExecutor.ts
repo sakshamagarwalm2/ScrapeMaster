@@ -22,6 +22,7 @@ export async function ExtractTextFromElementExecutor(
 
     const $ = cheerio.load(html);
     const element = $(selector);
+    console.log("here",element);
     if (!element) {
         environment.log.error("Element not found");
       return false;

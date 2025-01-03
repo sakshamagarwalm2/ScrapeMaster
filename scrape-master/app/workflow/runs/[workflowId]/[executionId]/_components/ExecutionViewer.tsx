@@ -50,6 +50,8 @@ function ExecutionViewer({ initialData }: { initialData: ExecutionData }) {
 
   const isRunning = query.data?.status === WorkflowExecutionStatus.RUNNING;
 
+
+
   const duration = DatesToDurationString(
     query.data?.completedAt,
     query.data?.startedAt
@@ -146,7 +148,7 @@ function ExecutionViewer({ initialData }: { initialData: ExecutionData }) {
                   <CoinsIcon size={18} className="stroke-muted-foreground" />
                   <span>Credits</span>
                 </div>
-                <span>TODO</span>
+                <span>{phaseDetails.data.creditsConsumed}</span>
               </Badge>
               <Badge variant={"outline"} className="space-x-4">
                 <div className="flex gap-1 items-center">
