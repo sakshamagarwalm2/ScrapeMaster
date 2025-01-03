@@ -52,6 +52,7 @@ export async function RunWorkflow(form:{
             status: WorkflowExecutionStatus.PENDING,
             startedAt: new Date(),
             trigger: WorkflowExecutionTrigger.MANUAL,
+            definition: flowdefinition,
             phases:{
                 create: executionPlan.flatMap((phase)=>{
                     return phase.nodes.flatMap((node)=>{
@@ -76,7 +77,7 @@ export async function RunWorkflow(form:{
         throw new Error('Failed to create workflow execution');
     }
 
-    
+
 
 
 

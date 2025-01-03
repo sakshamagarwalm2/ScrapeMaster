@@ -86,7 +86,6 @@ export function FlowToExecutionplan(nodes: AppNode[], edges: Edge[]): FlowToExec
             }
         }
     }
-    console.log(executionPlan)
     return {executionPlan};
 }
 
